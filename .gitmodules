@@ -1,3 +1,6 @@
 [submodule "kui-library"]
   path = kui-library
   url = https://github.com/karantadev/kui-library.git
+[submodule]
+  path = mydas-proto
+  url = https://github.com/karantadev/mydas-proto.git
