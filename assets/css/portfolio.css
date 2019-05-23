@@ -3,10 +3,9 @@
 }
 .portfolio {
   display: grid;
-  height: 100vh;
+  max-height: 100vh;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto 1fr 1fr auto;
-  grid-row-gap: 10px;
   grid-template-areas:
     '. . header header header . .'
     '. projects projects projects projects projects .'
@@ -15,7 +14,7 @@
 }
 .portfolio-header {
   grid-area: header;
-  margin-top: 10px;
+  margin-top: 20px;
   align-self: start;
 }
 .portfolio-foot {
@@ -27,6 +26,7 @@
 }
 .portfolio-content {
   grid-area: content-body;
+  margin: 20px 0px 40px 0px;
 }
 .portfolio-projects {
   grid-area: projects;
@@ -34,6 +34,11 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
   grid-template-areas: 'left right';
+  margin-top: 20px;
+}
+.portfolio-projects-img {
+  max-height: 200px;
+  min-height: 150px;
 }
 .portfolio-projects-left {
   grid-area: left;
