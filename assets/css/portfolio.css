@@ -3,9 +3,9 @@
 }
 .portfolio {
   display: grid;
-  max-height: 100vh;
+  min-height: 100vh;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-rows: auto minmax(0.5fr, 1fr) 1fr auto;
   grid-template-areas:
     '. . header header header . .'
     '. projects projects projects projects projects .'
@@ -37,14 +37,17 @@
   margin-top: 20px;
 }
 .portfolio-projects-img {
-  min-height: 150px;
+  height: auto;
+  width: 100%;
 }
 .portfolio-projects-left {
   grid-area: left;
   background-color: black;
+  align-content: center;
 }
 .portfolio-projects-right {
   grid-area: right;
+  align-content: center;
 }
 .mydas-proto {
   background-color: #131d28;

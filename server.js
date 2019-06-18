@@ -12,4 +12,6 @@ app.get('/', (request, response) => {
   })
 })
 
-app.listen(port)
+app.listen(port, () => {
+  console.log(`Running on port: ${port}`)
+})
